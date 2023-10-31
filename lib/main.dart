@@ -10,80 +10,92 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.teal,
+        backgroundColor: Colors.purple[900],
         body: SafeArea(
-          child: Row(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            // crossAxisAlignment: CrossAxisAlignment
-            //.stretch,
-            //.values,
-            //.stretch,
-            //.start,
-            //.baseline,
-            //.center,
-            //.end,
-            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            //.spaceEvenly,
-            //.spaceAround,
-            //.end,
-            //.center,
-            // verticalDirection: VerticalDirection.up,
-            //.down,
-            //.up,
-            //  mainAxisSize: MainAxisSize.max,
-            //.min,
+          child: Column(
             children: <Widget>[
-              Container(
-                // height: 100,
-                width: 100,
-                // margin: EdgeInsets.only(left: 30.0),
-                // padding: EdgeInsets.all(20.0),
-                // fromLTRB
-                //   (30, top, right, bottom)
-                //symmetric(vertical: 20.0, horizontal: 10.0),
-                color: Colors.red,
-                // child: Text('Container 1'),
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/rm.png'),
               ),
-              // SizedBox(
-              //   width: 30.0,
-              //  // height: 30.0,
-              // ),
-
+              Text(
+                'KSP ',
+                style: TextStyle(
+                  fontFamily: 'SourceSans3',
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                'PROJECT MANAGER ',
+                style: TextStyle(
+                  fontFamily: 'AutoOne',
+                  fontSize: 20.0,
+                  color: Colors.purple.shade100,
+                  letterSpacing: 2.5,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
               Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                padding: EdgeInsets.all(10.0),
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                child: Row(
                   children: <Widget>[
-                    Container(
-                      height: 100,
-                      width: 100,
-                      color: Colors.yellow,
-                      // child: Text('Container 3'),
+                    Icon(
+                      Icons.phone,
+                      // size: 20.0,
+                      color: Colors.purple,
                     ),
-                     Container(
-                      width: 100.0,
-                       height: 100.0,
-                       color: Colors.green,
-                     ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      '91+ 9829626345',
+                      style: TextStyle(
+                        color: Colors.purple.shade900,
+                        fontFamily: 'SourceSans3',
+                        fontSize: 20,
+                      ),
+                    ),
+
                   ],
                 ),
               ),
               Container(
+                padding: EdgeInsets.all(10.0),
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                child: Row(
+                  children: <Widget>[
+                    Icon(
+                      Icons.email,
+                      // size: 20.0,
+                      color: Colors.purple,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      'kap@gmail.com',
+                      style: TextStyle(
+                        color: Colors.purple.shade900,
+                        fontFamily: 'SourceSans3',
+                        fontSize: 20,
+                      ),
+                    ),
 
-                // height: 100.0,
-                width: 100.0,
-                color: Colors.blue,
-                // child: Text('Container 2'),
+                  ],
+                ),
               ),
-              // SizedBox(
-              //   width: 30.0,
-              //   // height: 30.0,
-              // ),
 
-              // Container(
-              //   width: double.infinity,
-              //   height: 10.0,
-              // ),
             ],
           ),
         ),
@@ -92,6 +104,100 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// import 'package:flutter/material.dart';
+//
+// void main() {
+//   runApp(MyApp());
+// }
+//
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       debugShowCheckedModeBanner: false,
+//       home: Scaffold(
+//         backgroundColor: Colors.teal,
+//         body: SafeArea(
+//           child: Row(
+//             crossAxisAlignment: CrossAxisAlignment.stretch,
+//             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//             // crossAxisAlignment: CrossAxisAlignment
+//             //.stretch,
+//             //.values,
+//             //.stretch,
+//             //.start,
+//             //.baseline,
+//             //.center,
+//             //.end,
+//             // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//             //.spaceEvenly,
+//             //.spaceAround,
+//             //.end,
+//             //.center,
+//             // verticalDirection: VerticalDirection.up,
+//             //.down,
+//             //.up,
+//             //  mainAxisSize: MainAxisSize.max,
+//             //.min,
+//             children: <Widget>[
+//               Container(
+//                 // height: 100,
+//                 width: 100,
+//                 // margin: EdgeInsets.only(left: 30.0),
+//                 // padding: EdgeInsets.all(20.0),
+//                 // fromLTRB
+//                 //   (30, top, right, bottom)
+//                 //symmetric(vertical: 20.0, horizontal: 10.0),
+//                 color: Colors.red,
+//                 // child: Text('Container 1'),
+//               ),
+//               // SizedBox(
+//               //   width: 30.0,
+//               //  // height: 30.0,
+//               // ),
+//
+//               Container(
+//                 child: Column(
+//                   mainAxisAlignment: MainAxisAlignment.center,
+//                   children: <Widget>[
+//                     Container(
+//                       height: 100,
+//                       width: 100,
+//                       color: Colors.yellow,
+//                       // child: Text('Container 3'),
+//                     ),
+//                      Container(
+//                       width: 100.0,
+//                        height: 100.0,
+//                        color: Colors.green,
+//                      ),
+//                   ],
+//                 ),
+//               ),
+//               Container(
+//
+//                 // height: 100.0,
+//                 width: 100.0,
+//                 color: Colors.blue,
+//                 // child: Text('Container 2'),
+//               ),
+//               // SizedBox(
+//               //   width: 30.0,
+//               //   // height: 30.0,
+//               // ),
+//
+//               // Container(
+//               //   width: double.infinity,
+//               //   height: 10.0,
+//               // ),
+//             ],
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
+//...........................................................................................................................................................................................................
 // import 'package:flutter/material.dart';
 // // import 'dart:ui';
 //
